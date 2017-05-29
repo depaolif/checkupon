@@ -3,7 +3,7 @@ function googleCall() {
   $("#results").hide()
   $("#twitterfly-photo").css("display", "block")
   $.ajax({
-    url: `http://check-up-on.herokuapp.com/users/${twitterHandle}/get_tweet_text_block`,
+    url: `https://check-up-on.herokuapp.com/users/${twitterHandle}/get_tweet_text_block`,
     success: (data) => {
       let userPhoto = data.user_photo
       GoogleApi.parseSentiment(data.tweet_text, twitterHandle)
