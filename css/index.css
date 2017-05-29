@@ -1,0 +1,79 @@
+body {
+  background: #FBFBFB;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#all {
+  margin-top: 10em;
+}
+
+#prompt {
+  color: rgb(83, 167, 225);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#search-field {
+  background-color: #FBFBFB;
+  color: grey;
+  width: 10em;
+  text-align: center;
+  outline: none;
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+#query {
+  margin-top: 1em;
+}
+
+#twitterfly-photo {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  height: 100px;
+  margin-top: 4.5em;
+  display: none;
+}
+
+#results {
+  font-size: 1.5em;
+  margin-top: 3em;
+  display: none;
+  text-align: center;
+}
+
+#twitter-photo {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  display: block;
+  margin: auto;
+}
+
+.tip {
+  border-bottom: 1px dotted grey;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.tip:hover {
+  cursor: help;
+}
+
+.tooltip-inner {
+    background-color: rgb(83, 167, 225);
+    color: #fff;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: rgb(83, 167, 225);
+}
+
+.errorAnimator {
+  animation: blink 1000ms forwards;
+}
+
+@keyframes blink {
+    from { color: red; }
+    to { color: #FBFBFB; }
+};

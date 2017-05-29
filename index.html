@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="js/Controllers/google_api_caller.js"></script>
+    <script type="text/javascript" src="js/Controllers/view_controller.js"></script>
+    <script type="text/javascript" src="js/Models/text_analyzer.js"></script>
+    <script type="text/javascript" src="js/Models/google_api.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+
+  <title>CheckUpOn</title>
+  </head>
+  <body>
+
+    <div id="all" class="container">
+      <span id="prompt" class="text-center">
+        <h2>How is @<input id="search-field" type="text" placeholder="twitter_handle"> doing?</h2>
+      </span>
+      <div class="text-center">
+        <button id="query" class="text-center">Let's Check</button>
+      </div>
+      <img id="twitterfly-photo" src="twitterfly-circle.gif">
+      <div id="results">
+        <a id="profile" target="_blank" href="#"><img id="twitter-photo" src=""></a>
+        <span id="sentiment"></span>
+        <p><span id="sentiment-exp" class="tip" data-toggle="tooltip" data-placement="bottom" title="How happy the person is from 1 (happy) to -1 (sad)"> Sentiment: <span id="sentiment-score"></span></span>
+          | <span id="magnitude-exp" class="tip" data-toggle="tooltip" data-placement="bottom" title="How emotionally charged the person is from 0 (not at all emotional) to 10 (highly emotional)"> Magnitude: <span id="magnitude-score"></span></span></p>
+      </div>
+    </div>
+
+  </body>
+</html>
